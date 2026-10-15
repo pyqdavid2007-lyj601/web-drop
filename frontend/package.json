@@ -1,0 +1,10 @@
+{
+  "name": "webdrop-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Angular-2 style TypeScript compiled to AngularDart by ts2dart (see pipeline.js)",
+  "dependencies": {
+    "ts2dart": "^0.9.11"
+  }
+}

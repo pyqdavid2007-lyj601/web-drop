@@ -1,0 +1,17 @@
+name: webdrop_frontend
+description: >-
+  web-drop frontend: Angular-2 style TypeScript compiled to AngularDart by
+  ts2dart (see ../pipeline.js), talking to the Django backend in ../backend.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  ngdart: ^8.0.0-dev.4
+
+dev_dependencies:
+  build_runner: ^2.4.12
+  build_web_compilers: ^4.0.11
+  lints: ^5.0.0

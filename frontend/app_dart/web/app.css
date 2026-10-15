@@ -1,0 +1,54 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #0f1117;
+  color: #e8eaf0;
+}
+file-drop-app { display: block; max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 15px; margin: 24px 0 8px; color: #9aa3b2; font-weight: 600; }
+.hint { color: #9aa3b2; margin: 0 0 20px; }
+.drop {
+  border: 2px dashed #3b4252;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  background: #151922;
+}
+.drop p { margin: 0 0 12px; color: #9aa3b2; }
+.error {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #3a1d21;
+  color: #ffb4b4;
+}
+.upload, .files li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #232833;
+}
+.upload .name, .files a { flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.upload .pct { width: 52px; text-align: right; color: #7fd1a8; }
+.upload .speed { width: 84px; text-align: right; color: #6f7787; font-size: 13px; }
+.upload .status { width: 120px; color: #9aa3b2; font-size: 13px; }
+.files ul { list-style: none; padding: 0; margin: 0; }
+.files a { color: #7fb2ff; text-decoration: none; }
+.files a:hover { text-decoration: underline; }
+.files .meta { color: #6f7787; font-size: 13px; white-space: nowrap; }
+button {
+  background: #232833;
+  color: #e8eaf0;
+  border: 1px solid #333a47;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font: inherit;
+}
+button:hover:enabled { background: #2b3140; }
+button:disabled { opacity: .5; cursor: default; }
+.refresh { margin-top: 24px; }

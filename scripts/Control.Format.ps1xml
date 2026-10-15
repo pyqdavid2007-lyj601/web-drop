@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- web-drop 控制台（scripts/Control.ps1）的表格样式，由脚本用 Update-FormatData -PrependPath 加载。
+     列宽是为 120 列控制台调的；数据行里中日韩字符只出现在最后一列，前面的列才能对齐。 -->
+<Configuration>
+  <ViewDefinitions>
+    <View>
+      <Name>WebDrop.Service</Name>
+      <ViewSelectedBy>
+        <TypeName>WebDrop.Service</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader><Label>服务</Label><Width>12</Width></TableColumnHeader>
+          <TableColumnHeader><Label>状态</Label><Width>8</Width></TableColumnHeader>
+          <TableColumnHeader><Label>PID</Label><Width>9</Width></TableColumnHeader>
+          <TableColumnHeader><Label>地址</Label><Width>24</Width></TableColumnHeader>
+          <TableColumnHeader><Label>说明</Label></TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem><PropertyName>Name</PropertyName></TableColumnItem>
+              <TableColumnItem><PropertyName>State</PropertyName></TableColumnItem>
+              <TableColumnItem><PropertyName>Pid</PropertyName></TableColumnItem>
+              <TableColumnItem><PropertyName>Address</PropertyName></TableColumnItem>
+              <TableColumnItem><PropertyName>Note</PropertyName></TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>WebDrop.Setting</Name>
+      <ViewSelectedBy>
+        <TypeName>WebDrop.Setting</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader><Label>#</Label><Width>4</Width></TableColumnHeader>
+          <TableColumnHeader><Label>键</Label><Width>25</Width></TableColumnHeader>
+          <TableColumnHeader><Label>生效值</Label><Width>12</Width></TableColumnHeader>
+          <TableColumnHeader><Label>来源</Label><Width>9</Width></TableColumnHeader>
+          <TableColumnHeader><Label>默认</Label><Width>8</Width></TableColumnHeader>
+          <TableColumnHeader><Label>说明</Label></TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem><PropertyName>No</PropertyName></TableColumnItem>
+              <TableColumnItem><PropertyName>Key</PropertyName></TableColumnItem>
+              <TableColumnItem><PropertyName>Effective</PropertyName></TableColumnItem>
+              <TableColumnItem><PropertyName>Source</PropertyName></TableColumnItem>
+              <TableColumnItem><PropertyName>Default</PropertyName></TableColumnItem>
+              <TableColumnItem><PropertyName>Note</PropertyName></TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+  </ViewDefinitions>
+</Configuration>

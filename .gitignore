@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Django runtime
+backend/db.sqlite3
+backend/media/
+backend/staticfiles/
+
+# Frontend (Node + Dart)
+frontend/node_modules/
+frontend/_preview/
+frontend/app_dart/.dart_tool/
+frontend/app_dart/build/
+frontend/app_js/
+
+# Logs
+*.log
+
+# Local tools (cloudflared fallback used by scripts/Control.ps1)
+tools/cloudflared*.exe

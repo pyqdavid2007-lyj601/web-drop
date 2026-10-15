@@ -1,0 +1,6 @@
+# Keep line endings stable across platforms/tools (the project is developed on Windows,
+# but the Dart/TS/Node/Python toolchains all emit LF).
+* text=auto eol=lf
+*.jpg binary
+*.png binary
+*.ico binary

@@ -1,0 +1,13 @@
+{% load static %}<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web-drop - 点对点文件互传</title>
+  <link rel="stylesheet" href="{% static 'app.css' %}?v={% now 'U' %}">
+</head>
+<body>
+  <file-drop-app>加载中...</file-drop-app>
+  <script defer src="{% static 'main.dart.js' %}?v={% now 'U' %}"></script>
+</body>
+</html>
